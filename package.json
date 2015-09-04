@@ -1,0 +1,19 @@
+{
+  "name": "autoupdategit",
+  "version": "1.0.0",
+  "description": "auto updates git from source file to target file at set interval using cronjob",
+  "main": "autoupdategit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chiefsmurph/autoupdategit"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiefsmurph/autoupdategit/issues"
+  },
+  "homepage": "https://github.com/chiefsmurph/autoupdategit"
+}

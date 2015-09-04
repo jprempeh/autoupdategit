@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/chiefsmurph/autoupdategit/issues"
   },
-  "homepage": "https://github.com/chiefsmurph/autoupdategit"
+  "homepage": "https://github.com/chiefsmurph/autoupdategit",
+  "dependencies": {
+    "async": "^1.4.2",
+    "fs": "0.0.2"
+  }
 }

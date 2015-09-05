@@ -17,7 +17,7 @@ async.waterfall([
     //  get current number of lines of target
         var i;
         var countLines = 0;
-        fs.createReadStream(targetfile)
+        fs.createReadStream(__dirname + '/' + targetfile)
           .on('data', function(chunk) {
             for (i=0; i < chunk.length; ++i)
               if (chunk[i] == 10) countLines++;
@@ -42,21 +42,21 @@ async.waterfall([
             });
         }
         console.log('line num ' + lineNum);
-        get_line(sourcefile, lineNum, function(err, line) {
+        get_line(__dirname + '/' + sourcefile, lineNum, function(err, line) {
           callback(null, line);
         })
   },
   function(lineToAdd, callback) {
     // append linetoadd to targetfile
-    fs.appendFile(targetfile, lineToAdd + '\n', function (err) {
+    fs.appendFile(__dirname + '/' + targetfile, lineToAdd + '\n', function (err) {
       if (err) throw err;
-      console.log('The "data to append" was appended to file!');
+      console.log('The line "' + lineToAdd + '" was appended to the targetfile (' + targetfile + ')');
       callback(null);
     });
   },
   function(callback) {
     // get all possible commit msgs
-    var possiblecommitmsgs = fs.readFileSync('commit-msgs.txt').toString().split("\n");
+    var possiblecommitmsgs = fs.readFileSync(__dirname + '/' + 'commit-msgs.txt').toString().split("\n");
     var selectedcommitmsg = possiblecommitmsgs[Math.floor(Math.random() * possiblecommitmsgs.length)];
     // and finally update git
     // add all and commit

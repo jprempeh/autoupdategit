@@ -2,7 +2,7 @@
 auto updates git from source file to target file at set interval using cronjob
 
 ## what it does
-add one line from the sourcefile [default: sourcefile.js] to targetfile [default: server.js]
+add one line from the sourcefile [default: sourcefile.js] to targetfile [default: server.js]<br>
 add, commit, push to github repo
 
 ## usage

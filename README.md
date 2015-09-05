@@ -11,9 +11,9 @@ add, commit, push to github repo
 3. "node autoupdategit.js"
 
 ## set up cronjob
-create and edit ~/.crontab
-add *  */3  *  *  *   /usr/local/bin/node [path/to/autoupdategit.js]
-crontab ~/.crontab
+create and edit ~/.crontab<br>
+add *  */3  *  *  *   /usr/local/bin/node [path/to/autoupdategit.js]<br>
+crontab ~/.crontab<br><br>
 
 view with crontab -l
 

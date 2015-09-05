@@ -1,5 +1,5 @@
 # auto-update-git
-get that github green!  auto-update-git automatically updates a git repo at somewhat random intervals while updating target file with new buffer from source file. 
+get that github green with auto-update-git. it automatically updates a git repo at somewhat random intervals while updating target file with new buffer from source file.
 
 ## what auto-update-git.js does on each run
 1. add one line from the sourcefile [default: sourcefile.js] to targetfile [default: server.js]<br>
@@ -16,5 +16,3 @@ get that github green!  auto-update-git automatically updates a git repo at some
 ## or stay running indefinitely
 1. to set your own update frequency change minMinsToNextUpdate & maxMinsToNextUpdate config variables at top of keeprunning.js
 2. "forever start keep-running.js"
-
-## have fun!

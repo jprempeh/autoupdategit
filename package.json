@@ -18,7 +18,7 @@
   "homepage": "https://github.com/chiefsmurph/autoupdategit",
   "dependencies": {
     "async": "^1.4.2",
-    "cron": "^1.0.9",
+    "forever": "^0.15.1",
     "fs": "0.0.2"
   }
 }

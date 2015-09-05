@@ -60,7 +60,7 @@ async.waterfall([
     var selectedcommitmsg = possiblecommitmsgs[Math.floor(Math.random() * possiblecommitmsgs.length)];
     // and finally update git
     // add all and commit
-    exec('git commit -a -m "' + selectedcommitmsg + '"', function(error, stdout, stderr) {
+    exec('cd "' + __dirname + '" && git commit -a -m "' + selectedcommitmsg + '"', function(error, stdout, stderr) {
       console.log('out ' + stdout);
       //console.log('err ' + stderr);
       callback();

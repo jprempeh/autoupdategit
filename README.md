@@ -1,4 +1,4 @@
-# autoupdategit
+# auto-update-git
 auto updates git from source file to target file at set interval using cronjob
 
 ## what it does

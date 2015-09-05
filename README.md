@@ -2,12 +2,12 @@
 automatically updates a git repo at somewhat random intervals while updating target file with new buffer from source file
 
 ## what auto-update-git.js does on each run
-add one line from the sourcefile [default: sourcefile.js] to targetfile [default: server.js]<br>
-add, commit, push to github repo
+1. add one line from the sourcefile [default: sourcefile.js] to targetfile [default: server.js]<br>
+2. add, commit, push to github repo
 
 ## setup
 1. npm install
-2. copy data to sourcefile.js
+2. copy dummy data to sourcefile.js (more the better!)
 3. create your own custom commit messages in commit-msgs.txt
 
 ## single run

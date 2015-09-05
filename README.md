@@ -1,5 +1,4 @@
 ![](https://raw.githubusercontent.com/chiefsmurph/auto-update-git/master/githubgreens.png)
-
 # auto-update-git
 get that github green with auto-update-git. it periodically updates a git repo by copying dummy data from sourcefile to targetfile.
 

@@ -1,0 +1,23 @@
+cleaning the code up
+tidying things up
+working hard
+getting things to work right
+always doing my best
+living the dream
+making the UI cleaner
+changing the callback
+passing the correct parameters to the outer function
+confirming request to the server before sending the response
+organizing the database into different tables
+converting from nosql -> sql database
+rewrote twitter
+rewrote facebook
+just having a good time having a good time
+keeping the code clean and modular always
+working hard every day of the week to make a more enjoyable web experience
+github is the best and i love how it showcases my hard work
+moved the top banner to the second page
+rewrote the app
+rewrote angular
+converted the back-end querystring to local client-side cache
+using cookies to store the users credit card information

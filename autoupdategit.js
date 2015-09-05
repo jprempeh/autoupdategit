@@ -5,8 +5,8 @@
 // cronjob: run node
 
 
-var sourcefile = 'angular.js';
-var targetfile = 'target.js';
+var sourcefile = 'sourcefile.js';
+var targetfile = 'server.js';
 
 var fs = require('fs');
 var async = require('async');

@@ -47,6 +47,7 @@ async.waterfall([
         })
   },
   function(lineToAdd, callback) {
+    // append linetoadd to targetfile
     fs.appendFile(targetfile, lineToAdd + '\n', function (err) {
       if (err) throw err;
       console.log('The "data to append" was appended to file!');
@@ -54,10 +55,13 @@ async.waterfall([
     });
   },
   function(callback) {
+    // get all possible commit msgs
+    var possiblecommitmsgs = fs.readFileSync('commit-msgs.txt').toString().split("\n");
+    var selectedcommitmsg = possiblecommitmsgs[Math.floor(Math.random() * possiblecommitmsgs.length)];
     // and finally update git
     // add all and commit
-    exec('git commit -a -m "Latest and the greatest"', function(error, stdout, stderr) {
-      console.log('out ' + stdout);
+    exec('git commit -a -m "' + selectedcommitmsg + '"', function(error, stdout, stderr) {
+      //console.log('out ' + stdout);
       console.log('err ' + stderr);
       callback();
     });
@@ -66,7 +70,7 @@ async.waterfall([
     // push to github
     exec('git push origin master', function(error, stdout, stderr) {
       console.log('out ' + stdout);
-      console.log('err ' + stderr);
+      //console.log('err ' + stderr);
     });
   }
 ]);

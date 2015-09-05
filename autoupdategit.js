@@ -10,6 +10,7 @@ var targetfile = 'target.js';
 
 var fs = require('fs');
 var async = require('async');
+var exec = require('child_process').exec;
 
 async.waterfall([
   function(callback) {
@@ -55,5 +56,16 @@ async.waterfall([
 ], function(err, result) {
   // and finally update git
 
+  // add all and commit
+  exec('git commit -a -m "Latest and the greatest"', function(error, stdout, stderr) {
+    console.log('out ' + stdout);
+    console.log('err ' + stderr);
+  });
+
+  // push to github
+  exec('git push origin master', function(error, stdout, stderr) {
+    console.log('out ' + stdout);
+    console.log('err ' + stderr);
+  });
   
 });

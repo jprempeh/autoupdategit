@@ -1,5 +1,5 @@
 # auto-update-git
-get that github green with auto-update-git. it periodically updates a git repo by copying dummy data from sourcefile to targetfile.
+get that github green with auto-update-git. it periodically updates a git repo by copying dummy data from sourcefile to targetfile and commiting / pushing the changes.
 
 ## what auto-update-git.js does on each run
 1. add one line from the sourcefile [default: sourcefile.js] to targetfile [default: server.js]<br>

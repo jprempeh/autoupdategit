@@ -1,7 +1,7 @@
 # auto-update-git
-auto updates git from source file to target file at set interval using cronjob
+automatically updates a git repo at somewhat random intervals while updating target file with new buffer from source file
 
-## what it does
+## what auto-update-git.js does on each run
 add one line from the sourcefile [default: sourcefile.js] to targetfile [default: server.js]<br>
 add, commit, push to github repo
 
@@ -14,6 +14,7 @@ add, commit, push to github repo
 "node autoupdategit.js"
 
 ## or stay running indefinitely
-"forever start keep-running.js"
+1. to set your own update frequency change minMinsToNextUpdate & maxMinsToNextUpdate config variables at top of keeprunning.js
+2. "forever start keep-running.js"
 
 ## have fun!

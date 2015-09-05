@@ -11,7 +11,7 @@ add, commit, push to github repo
 3. create your own custom commit messages in commit-msgs.txt
 
 ## single run
-"node autoupdategit.js"
+"node auto-update-git.js"
 
 ## or stay running indefinitely
 1. to set your own update frequency change minMinsToNextUpdate & maxMinsToNextUpdate config variables at top of keeprunning.js

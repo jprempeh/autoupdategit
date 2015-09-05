@@ -1,5 +1,5 @@
 # auto-update-git
-automatically updates a git repo at somewhat random intervals while updating target file with new buffer from source file
+get that github green!  auto-update-git automatically updates a git repo at somewhat random intervals while updating target file with new buffer from source file. 
 
 ## what auto-update-git.js does on each run
 1. add one line from the sourcefile [default: sourcefile.js] to targetfile [default: server.js]<br>

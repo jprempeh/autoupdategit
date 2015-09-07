@@ -1,8 +1,8 @@
 var exec = require('child_process').exec;
 
 // config
-var minMinsToNextUpdate = 60;   // 1 hr
-var maxMinsToNextUpdate = 4 * 60; // 4 hrs
+var minMinsToNextUpdate = 600;   // 1 hr
+var maxMinsToNextUpdate = 24 * 60; // 4 hrs
 
 var updategit = function(callback) {
 
